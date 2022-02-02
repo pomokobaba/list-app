@@ -1,5 +1,5 @@
-var express = require('express');
-var app = express.Router();
+const express = require('express');
+const app = express();
 
 // CSS読込み
 app.use(express.static('public'));
@@ -8,9 +8,14 @@ app.get('/', (req, res) => {
   res.render('hello.ejs');
 });
 
-// トップ画面を表示するルーティングを作成してください
-app.get('/top',(req, res) => {
+// トップ画面
+app.get('/top', (req, res) => {
   res.render('top.ejs');
 });
 
-module.exports = app;
+// // 買い物リスト画面
+// app.get('/index', (req, res) => {
+//   res.render('index.ejs');
+// });
+
+app.listen(3000);
