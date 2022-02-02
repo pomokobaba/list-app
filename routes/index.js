@@ -13,9 +13,9 @@ app.get('/top', (req, res) => {
   res.render('top.ejs');
 });
 
-// // 買い物リスト画面
-// app.get('/index', (req, res) => {
-//   res.render('index.ejs');
-// });
+// 買い物リスト画面
+app.get('/index', (req, res) => {
+  res.render('index.ejs');
+});
 
-app.listen(3000);
+module.exports = app;
