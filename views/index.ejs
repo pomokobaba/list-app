@@ -19,6 +19,9 @@
           <span class="id-column">ID</span>
           <span>買うもの</span>
         </div>
+
+        <% const item = {id: 4, name: 'とまと'}; %>
+
         <ul class="table-body">
           <li>
             <span class="id-column">1</span>
@@ -31,6 +34,10 @@
           <li>
             <span class="id-column">3</span>
             <span class="name-column">たまねぎ</span>
+          </li>
+          <li>
+            <span class="id-column"><%= item.id %></span>
+            <span class="name-column"><%= item.name %></span>
           </li>
         </ul>
       </div>
