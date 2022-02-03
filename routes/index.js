@@ -4,12 +4,8 @@ const app = express();
 // CSS読込み
 app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-  res.render('hello.ejs');
-});
-
 // トップ画面
-app.get('/top', (req, res) => {
+app.get('/', (req, res) => {
   res.render('top.ejs');
 });
 
